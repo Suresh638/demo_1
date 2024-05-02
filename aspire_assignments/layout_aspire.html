@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .outer{
+            display: grid;
+            grid-template-columns: repeat(8,minmax(100px,1fr));
+            grid-template-rows: repeat(6,minmax(100px,1fr));
+            gap: 3px;
+            grid-template-areas:
+            "h h h h h h h h"
+            "n n n n n n n n"
+            "c1 c1 m m  m m c2 c2"
+            "c1 c1 m m  m m c2 c2"
+            "c1 c1 m m  m m c2 c2"
+            "f f f f f f f f";
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="header" style="background-color: lightcoral; grid-area: h; text-align: center; " >
+            <p style="padding-top: 20px;" >Header</p>
+        </div>
+        <div class="navigation" style="background-color:lightblue; grid-area: n;text-align: center">
+            <p style="padding-top: 20px;" >navigation menu</p>
+        </div>
+        <div class="content_1" style="background-color:aquamarine; grid-area: c1;text-align: center">
+            <p style="padding-top: 100px;" > content_1 </p>
+        </div>
+        <div class="main"style="background-color:lightgoldenrodyellow;grid-area: m;text-align: center">
+            <p style="padding-top: 100px;" >Main_content </p>
+        </div>
+        <div class="content_2"style="background-color:lightgray;grid-area: c2;text-align: center">
+            <p style="padding-top: 100px;" >content_2 </p>
+        </div>
+        <div class="footer"style="background-color:pink;grid-area: f;text-align: center">
+            <p style="padding-top: 20px;" > Footer </p>
+        </div>
+    </div>
+</body>
+</html>
