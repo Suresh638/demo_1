@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GETTING ELEMENT BY ID</title>
+</head>
+<body>
+    <div>
+        <p id="message">hi this is a message</p>
+        <p id="message">balachandran maapla</p>
+        <input type="radio" name="suresh" value="bala">
+        <input type="radio" name="suresh">
+        <input type="radio" name="suresh">
+        <h1> muthal vanakkam da maaplaaa</h1>
+        <h1> rendam vanakkam da maaplaaa</h1>
+        <h1> moondram vanakkam da maaplaaa</h1>
+        <h1> naangam vanakkam da maaplaaa</h1>
+        <p class="panam">any</p>
+        <p class="panam">any</p>
+        <p class="panam">any</p>
+        <p class="panam">any</p>
+    </div>
+    <script>
+        let msg = document.getElementById("message");
+        msg.innerHTML = "edited by sureshkrishna G.";
+        console.log(msg.innerHTML);
+        let radio = document.getElementsByName('suresh');
+        console.log(radio);
+
+        let tag = document.getElementsByTagName('h1');
+        tag.innerHTML = "suresh";
+        console.log(tag);
+
+        let clss = document.getElementsByClassName("panam");
+        console.log(clss);
+
+        alert(clss[0].nodeName)
+
+
+    </script>
+</body>
+</html>
