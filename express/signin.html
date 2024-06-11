@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sigin express</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&family=Seymour+One&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            text-align: center;
+            color:blue;
+        }
+        .signin{
+            width: auto;
+            height: auto;
+            border: 5px groove blue;
+            display: inline-block;
+            text-align: center;
+            margin-left: 40%;
+            padding : 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        label{
+            color: blue;
+            font-family: seymour one;
+            font-weight: bold;
+        }
+        button{
+            color: blue;
+            font-family: seymour one ;
+            background-color: white;
+            border-radius: 10px;
+            width: 80px;
+            height: 30px;
+            border: 2px solid blue;
+        }
+        button:hover{
+            color: white;
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        .seymour-one-regular {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+input{
+    border: 2px solid blue;
+}
+
+    </style>
+</head>
+<body>
+    <h1 >welcome to suresh cart sign in page</h1>
+<div class="signin">
+    <form action="http://localhost:7500" method="post" >
+        <label for="username">User Name : </label>
+        <input type="text" id="username" name="username">
+<br> <br>
+        <label for="fname">First Name : </label>
+        <input type="text" id="fname">
+<br> <br>
+        <label for="lname">Last Name : </label>
+        <input type="text" id="lname">
+<br> <br>
+        <label for="mob">Mobile No : </label>
+        <input type="number">
+<br> <br>       
+        <button value="signin">sign in</button>
+    </form>
+</div>
+</body>
+</html>
