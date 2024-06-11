@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Basic html tags</title>
+<style>
+*{
+margin:0px auto;
+
+}
+.maincontainer{
+width:1000px;
+height:auto;
+background-color:silver;
+}
+.header{
+height:150px;
+background-color:orange;
+}
+.menu{
+height:50px;
+background-color:yellow;
+}
+.content{
+height:auto;
+background-color:darkblue;
+}
+.leftcontent{
+width:200px;
+height:600px;
+background-color:orange;
+float:left;
+}
+.rightcontent{
+width:800px;
+height:600px;
+background-color:green;
+float:right;
+}
+.imagecontainer{
+width:700px;
+height:250px;
+background-color:white;
+border:2px solid black;
+margin-top:25px;
+}
+.first,.second,.third{
+width:200px;
+height:200px;
+display: inline-block;
+margin-top: 23px;
+border: 2px solid black;
+margin-bottom : 23px;
+}
+
+.first{
+margin-left:20px;
+display: inline-block;
+}
+.second{
+margin-right:20px;
+margin-left:20px;
+
+}
+
+.clear{
+clear:both;
+}
+.footer{
+height:50px;
+background-color:yellow;
+}
+.button{
+width:80px;
+height: 50px;
+margin-left : 80px;
+margin-right: 80px;
+color:white;
+background-color:black;
+transistion : 0.6s;
+list-style-type : none;
+display : inline-block;
+text-align : center;
+}
+
+.button:hover{
+height: 45px;
+background : rgba(0,0,0,0.6);
+transistion : 0.6;
+cursor : pointer;
+border-radius : 25px 0px;
+border-bottom : 5px solid red;
+}
+
+</style>
+</head>
+<body>
+<div class="maincontainer">
+<div class="header">Header</div>
+<div class="menu">
+	<li class = "button" >Home</li>
+	<li class = "button" >About</li>
+	<li class = "button" >Services</li>
+	<li class = "button" >Contact</li>
+</div>
+<div class="content">
+<div class="leftcontent">Left Content</div>
+<div class="rightcontent">
+<div class="imagecontainer">
+<div class="first">
+<img src="images/emp1.jpg" width="200" height="200">
+</div>
+<div class="second">
+<img src="images/emp2.jpg" width="200" height="200">
+</div>
+<div class="third">
+<img src="images/emp3.jpg" width="200" height="200">
+</div>
+</div>
+</div>
+</div>
+<div class="footer clear">Footer</div>
+</div>
+</body>
+</html>

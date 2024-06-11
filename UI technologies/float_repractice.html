@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float practice</title>
+    <style>
+        .parent{
+            background-color: beige;
+            width: 1000px;
+            height: auto;
+            border: 5px solid black;
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
+        .header{
+            height: 125px;
+            background-color: orange;
+        }
+        .nav{
+           height: 75px;
+           background-color: yellow;
+        }
+        .innerpar{
+            height: 300px;
+            background-color: aqua;
+        }
+        .sidebar{
+            width: 200px;
+            height: 100%;
+            background-color: orange;
+            float: left;
+        }
+
+        .con{
+            background-color: green;
+            width: 800px;
+            height: 100%;
+            float: left;
+        }
+        .footer{
+            height: 50px;
+            background-color: yellow;
+        }
+        .box{
+            width: 150px;
+            height:100px;
+            background-color: greenyellow;
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">header</div>
+        <div class="nav">nav</div>
+        <div class="innerpar">
+            <div class="sidebar">sidebar</div>
+            <div class="con">con</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+
+
+    <br>
+    <div class="box">petti</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel labore dolore dolorum? Dolorem aperiam placeat vero iusto. Eveniet, exercitationem esse. Deserunt consequuntur, ratione assumenda quibusdam accusantium aut odit! Suscipit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consectetur! Labore tenetur delectus voluptatibus. Ad quia sapiente sequi ipsa ea quae incidunt impedit est, nesciunt saepe quas deleniti earum consectetur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo autem magni. Consectetur perferendis possimus, aliquam recusandae, earum eos obcaecati iure amet alias voluptatum provident, non est qui soluta eaque?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem delectus ea, tempora nam vel aperiam doloribus qui perspiciatis, distinctio a sint. Voluptates, quis? Cumque, sed nam. Assumenda, accusantium! Rerum, harum.</p>
+</body>
+</html>
+
+<!-- the float will have a chance to disturb other elements so that we can use the clear to avoid such things and it has three values and they are :
+left , right , both -->
